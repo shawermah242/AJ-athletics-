@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Red Flame Set",
+    "price": 120,
+    "description": "Black athletic set with red flaming design, premium quality for gym or casual wear.",
+    "imageUrl": "images/red-flame-set.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Blue Flame Set",
+    "price": 120,
+    "description": "Black athletic set with blue flaming design, stylish and durable for all activities.",
+    "imageUrl": "images/blue-flame-set.jpeg"
+  }
+]
