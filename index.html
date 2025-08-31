@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AJ</title>
+  <title>AJ Athletics</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -75,21 +75,21 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  // TWO PRODUCTS ONLY – replace imageUrl, name, price, and description once you have real images.
+  // الكود هنا يطابق 100% أسماء الملفات الموجودة عندك
   const products = [
                 {
                     id: 1,
                     name: 'Red Flame Set',
                     price: 120,
                     description: 'Black athletic set with red flaming design, premium quality for gym or casual wear.',
-                    imageUrl: 'images/red-flame-set.jpeg'
+                    imageUrl: 'images/red-flame-set.jpeg' // <-- تم التأكد من تطابق الاسم والامتداد
                 },
                 {
                     id: 2,
                     name: 'Blue Flame Set',
                     price: 120,
                     description: 'Black athletic set with blue flaming design, stylish and durable for all activities.',
-                    imageUrl: 'images/blue-flame-set.jpeg'
+                    imageUrl: 'images/blue-flame-set.jpeg' // <-- تم التأكد من تطابق الاسم والامتداد
                 }
             ];
 
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.dataset.id=p.id;
       card.innerHTML = \`
         <div class="product-image-container">
-          <img src="\${p.imageUrl}" alt="\${p.alt || p.name}" loading="lazy">
+          <img src="\${p.imageUrl}" alt="\${p.name}" loading="lazy">
         </div>
         <h3 class="product-name">\${p.name}</h3>
         <p class="product-price">$ \${p.price.toFixed(2)}</p>
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(!p) return;
     detail.innerHTML = \`
       <div class="detail-image-container">
-        <img src="\${p.imageUrl}" alt="\${p.alt || p.name}">
+        <img src="\${p.imageUrl}" alt="\${p.name}">
       </div>
       <div class="product-detail-info">
         <a href="#" class="detail-back-link">&larr; Back</a>
